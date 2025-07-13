@@ -1,7 +1,7 @@
 provider "google" {
   project = "phonic-presence-310804"
-  region  = "eastus4"
-  zone    = "us-central1-a"
+  region  = var.region
+  zone    = var.zone
 }
 
 resource "google_service_account" "default" {
