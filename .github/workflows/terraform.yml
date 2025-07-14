@@ -18,7 +18,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: modules/compute  # 
+        working-directory: modules/compute  # this line is giving the directoy path to terraform to look for files
 
     steps:
     # Checkout the repository to the GitHub Actions runner
@@ -33,7 +33,7 @@ jobs:
     - name: Authenticate to GCP
       uses: 'google-github-actions/auth@v2'
       with:
-        credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}' # Replace with the name of your GitHub Actions secret
+        credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}' # Replace with the name of your GitHub Actions secret apart from this terraform also needs to authenticate to GCP same cred is to be stored in terraform cloud
 
     # Initialize a new or existing Terraform working  directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
