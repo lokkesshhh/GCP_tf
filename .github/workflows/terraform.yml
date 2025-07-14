@@ -18,7 +18,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: modules/compute  # 👈 add this line
+        working-directory: modules/compute  # 
 
     steps:
     # Checkout the repository to the GitHub Actions runner
