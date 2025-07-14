@@ -21,7 +21,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: modules/compute  # this line is giving the directoy path to terraform to look for files
+        working-directory: modules/compute  # this line is giving the  directoy path to terraform to look for files
 
     steps:
     # Checkout the repository to the GitHub Actions runner
