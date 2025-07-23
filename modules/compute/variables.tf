@@ -1,7 +1,7 @@
 variable "instance" {
      description = "Name of the instance machine"
      type = string
-     default = "default"
+      default = "default"
   
 }
 variable "machine_type" {
